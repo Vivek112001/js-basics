@@ -1,5 +1,7 @@
 /* https://i.pinimg.com/originals/5f/e1/d2/5fe1d2b642ceb35d4f3de38980ac7f03.gif */
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -14,5 +16,56 @@ body {
 #main {
     height: 100%;
     width: 100%;
-    background-color: rgb(171, 143, 151);
+    background-color: rgb(209, 209, 209);
+
+}
+.main-holder {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#part-1 {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+#part-2 {
+    width: 66.67%;
+    height: 100%;
+    background: url("https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(209, 209, 209, 0.25);
+}
+
+#part-3 {
+    width: 9.33%;
+    height: 100%;
+}
+
+.text-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+.text-div>h2 {
+    font-family: "Anton" , serif;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 0.9;
+    letter-spacing: 10px;
+
 }
